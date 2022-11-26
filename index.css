@@ -1,5 +1,6 @@
 *{
     margin:0;
+    padding: 0;
     scroll-behavior: smooth !important;
 }
 
@@ -21,6 +22,8 @@ header
 {
     position: sticky;
     top:0;
+
+    z-index: 2;
 
     display:flex;
     align-items: center;
@@ -212,6 +215,155 @@ nav>li>ul>a:hover{
 #scroll::-webkit-scrollbar-thumb:hover {
     background: #555; 
   }
+
+/*
+* Projects
+*/
+#projects{
+    /* position:absolute; */
+    display: flex;
+    /* justify-content: flex-end; */
+    height:100vh;
+    width: 100vw;
+    background-image: url(./images/screen.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border: 2px dashed purple;
+}
+
+#screen{
+    flex-grow: 6;
+    margin-top: 4vh;
+    margin-left: 6%;
+    height:69.1vh;
+    /* flex-basis: 70%; */
+    width:60% ;
+    flex-shrink:0;
+    border: 2px dashed rgb(211, 139, 211);
+}
+
+#screen>img{
+    height: 100%;
+    width: 100%;
+}
+
+
+#internet, #github {
+    width: 40px;
+}
+
+#titleline{
+    display: flex;
+    justify-content: space-between;
+}
+
+#links{
+    display: flex;
+    
+    gap:5px;
+}
+
+.projectDescriptionGroup{
+    display: flex;
+
+    height: fit-content;
+    width: fit-content;
+    margin-top: 25vh;
+
+    position: relative;
+    top:5vh;
+    right:10vw;
+    border: 2px dashed rgb(211, 139, 211);
+}
+
+
+.arrows{
+    height:60px;
+    width: 60px;
+    margin-top: 16vh;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: rgb(159, 146, 23,.9);
+    color:rgb(247, 247, 250);
+    font-size: 60px;
+    text-align: center;
+    font-family: 'Nanum Pen Script', cursive;
+    
+}
+
+#backArrow{
+    padding:2vh 3vh 3vh 2vh;
+    margin-right: -20px;
+    z-index: 2;
+}
+
+#frontArrow{
+    padding:2vh 2vh 3vh 3vh; 
+    margin-left: -20px;
+    z-index: 2;
+}
+
+#projectDesc{
+    display: flex;
+    flex-direction: column;
+    min-height:40vh;
+    height: fit-content;
+    width: 30vw;
+    padding:30px;
+
+    color:rgb(247, 247, 250);
+    font-size: 30px;
+    border: 2px dashed red;
+    background-color: rgba(159, 146, 23, 0.816);
+    border-radius: 5px;
+}
+
+#projectTitle{
+    font-family:'Nothing You Could Do', cursive;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-weight: 900;
+}
+
+#projectText{
+    height:25vh;
+    overflow-y: scroll;
+    border: 2px dashed rgb(198, 190, 190);
+    /* font-family: 'Nanum Pen Script', cursive; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* width */
+#projectText::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+#projectText::-webkit-scrollbar-track {
+    background:rgba(114, 105, 18, 0.816);
+  }
+   
+  /* Handle */
+ #projectText::-webkit-scrollbar-thumb {
+    background: rgb(191, 174, 26,0.8);; 
+  }
+  
+  /* Handle on hover */
+#projectText::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+#stackImages{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 10vh;
+}
+
+#stackImages>img{
+    width:70px;
+    padding:0;
+    border: 2px dashed red;
+}
 /*
 * MEDIA QUERIES
 */
@@ -220,4 +372,16 @@ nav>li>ul>a:hover{
     #profile-line{
         width: 100%;
     }
+    
+  }
+
+  
+
+@media only screen and (max-width: 1600px) {
+    #profile-line{
+        width: 100%;
+    }
+    #stackImages>img{
+    width:40px;
+}
   }

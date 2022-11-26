@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../Code_Playground/CSS_Tutorials"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "PortfolioSite"
+	}
+}
