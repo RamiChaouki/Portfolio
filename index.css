@@ -83,13 +83,13 @@ nav>li>ul>a:hover{
     display: grid;
     place-items: center;
     height:100vh;
-    border: 2px dashed red;
+    /* border: 2px dashed red; */
     flex-wrap: wrap;
 }
 .middleContainer{
     display: flex;
     flex-direction: row;
-    border: 2px dashed green;
+    /* border: 2px dashed green; */
     flex-wrap: wrap;
     background-color: rgba(248, 242, 242, 0.5) ;
     border-radius: 3%;
@@ -228,7 +228,7 @@ nav>li>ul>a:hover{
     background-image: url(./images/screen.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    border: 2px dashed purple;
+    /* border: 2px dashed purple; */
 }
 
 #screen{
@@ -239,7 +239,7 @@ nav>li>ul>a:hover{
     /* flex-basis: 70%; */
     width:60% ;
     flex-shrink:0;
-    border: 2px dashed rgb(211, 139, 211);
+    /* border: 2px dashed rgb(211, 139, 211); */
 }
 
 #screen>img{
@@ -273,7 +273,7 @@ nav>li>ul>a:hover{
     position: relative;
     top:5vh;
     right:10vw;
-    border: 2px dashed rgb(211, 139, 211);
+    /* border: 2px dashed rgb(211, 139, 211); */
 }
 
 
@@ -313,7 +313,7 @@ nav>li>ul>a:hover{
 
     color:rgb(247, 247, 250);
     font-size: 30px;
-    border: 2px dashed red;
+    /* border: 2px dashed red; */
     background-color: rgba(159, 146, 23, 0.816);
     border-radius: 5px;
 }
@@ -327,7 +327,7 @@ nav>li>ul>a:hover{
 #projectText{
     height:25vh;
     overflow-y: scroll;
-    border: 2px dashed rgb(198, 190, 190);
+    /* border: 2px dashed rgb(198, 190, 190); */
     /* font-family: 'Nanum Pen Script', cursive; */
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -362,7 +362,7 @@ nav>li>ul>a:hover{
 #stackImages>img{
     width:70px;
     padding:0;
-    border: 2px dashed red;
+    /* border: 2px dashed red; */
 }
 /*
 * MEDIA QUERIES
